@@ -1,4 +1,4 @@
-
+<?php include("config.php"); ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -22,10 +22,10 @@
   <body class="text-center">
     <form class="form-signin" action="verification.php" method="post">
       <h1 class="h3 mb-3 font-weight-normal">Painel Administrativo</h1>
-      <label for="inputEmail" class="sr-only">Seu E-mail</label>
-      <input type="email" id="inputEmail" class="form-control" placeholder="Endereço de E-mail" required autofocus>
-      <label for="inputPassword" class="sr-only">Sua Senha</label>
-      <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+      <label for="email" class="sr-only">Seu E-mail</label>
+      <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Endereço de E-mail" required autofocus>
+      <label for="password" class="sr-only">Sua Senha</label>
+      <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Senha" required>
       <div class="checkbox mb-3">
       </div>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>

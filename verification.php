@@ -2,10 +2,10 @@
 
 include("config.php"); 
 
-$username = $_POST['email'];
+$email = $_POST['email'];
 $password = $_POST['password'];
-$sql = mysql_query("SELECT * FROM usuarios WHERE email = '$email' and  password = '$password'");
-$row = mysql_num_rows($sql);
+$sql = mysqli_query($con, "SELECT * FROM usuarios WHERE email = '$email' and  password = '$password'");
+$row = mysqli_fetch_assoc($sql);
 if($row > 0) {
     session_start();
     $_SESSION['email']=$_POST['email'];
