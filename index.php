@@ -20,7 +20,7 @@
   </head>
 
   <body class="text-center">
-    <form class="form-signin">
+    <form class="form-signin" action="verification.php" method="post">
       <h1 class="h3 mb-3 font-weight-normal">Painel Administrativo</h1>
       <label for="inputEmail" class="sr-only">Seu E-mail</label>
       <input type="email" id="inputEmail" class="form-control" placeholder="Endereço de E-mail" required autofocus>
